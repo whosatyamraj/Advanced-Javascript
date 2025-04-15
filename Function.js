@@ -127,3 +127,66 @@ console.log(RecursiveFunction(5)); // Output: 15
 logRecursion(3); 
 */
 
+
+
+/*function getRecursive(nr){
+    console.log(nr);
+    if(nr>0){
+        getRecursive(--nr);   }
+}
+getRecursive(3); // Output: 3, 2, 1, 0
+*/
+
+
+/*function getRecursive(nr){
+    console.log("started Function:",nr);
+    if(nr>0){
+        getRecursive(nr-1);   }
+    else{
+        console.log("Recursion ends here"); 
+
+    }
+    console.log("ended Function:",nr);}
+      getRecursive(3);
+*/
+
+
+// Nested function
+
+/*function doOuterFunctionStuff(nr){
+    console.log("Outer function:",nr);
+    function doInnerFunctionStuff(nr){
+        console.log("Inner function:",nr);
+    }
+    doInnerFunctionStuff(nr-1);
+    console.log("Outer function ends here:",nr);
+}
+return doOuterFunctionStuff(3); // Output: Outer function: 3, Inner function: 2, Outer function ends here: 3
+*/
+
+
+// Anonymous function
+// Function callback
+/*let functionvariable = function() {
+    console.log("Not so secret though");
+}
+function doFlexibleStuff(executestuff) {
+    executestuff();
+    console.log("doFlexible stuff");
+}
+doFlexibleStuff(functionvariable); // Output: doFlexible stuff, Not so secret though
+*/
+
+
+/*let youGotThis = function() {
+    console.log("You got this!");
+}
+//setTimeout(youGotThis, 2000); // Output: You got this! after 2 seconds
+setInterval(youGotThis, 5000); // Output: You got this! every 5 seconds
+*/
+
+/*let testfunction = function() {
+    console.log("HELLO");
+}(); // Output: HELLO
+*/
+
